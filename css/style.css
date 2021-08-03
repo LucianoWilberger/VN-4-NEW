@@ -271,7 +271,12 @@ article {
 .slidex {
   display: flex;
   transform: translate3d(0, 0, 0);
-  transition: all 600ms; }
+  transition: all 600ms;
+  animation-name: valores;
+  animation-duration: 6.5;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite; }
 
 .slideItem {
   position: relative;
@@ -296,8 +301,8 @@ article {
   flex-direction: column;
   align-items: center;
   border: 2px solid black;
-  width: 50px;
-  height: 50px;
+  width: 35px;
+  height: 35px;
   border-radius: 4px;
   overflow: hidden;
   cursor: pointer;
@@ -325,22 +330,30 @@ input[id="1"]:checked ~ .slidex {
   animation: none;
   transform: translate3d(0, 0, 0); }
 
-input[id="1"]:checked ~ .pagination .pagination-item [for="1"] {
+input[id="1"]:checked ~ .pagination .pagination-item[for="1"] {
   background-color: white; }
 
 input[id="2"]:checked ~ .slidex {
   animation: none;
   transform: translate3d(calc(-100% * 1), 0, 0); }
 
-input[id="2"]:checked ~ .pagination .pagination-item [for="2"] {
+input[id="2"]:checked ~ .pagination .pagination-item[for="2"] {
   background-color: white; }
 
 input[id="3"]:checked ~ .slidex {
   animation: none;
   transform: translate3d(calc(-100% * 2), 0, 0); }
 
-input[id="3"]:checked ~ .pagination .pagination-item [for="3"] {
+input[id="3"]:checked ~ .pagination .pagination-item[for="3"] {
   background-color: white; }
+
+@keyframes valores {
+  33% {
+    transform: translate3d(calc(-100% * 0), 0, 0); }
+  66% {
+    transform: translate3d(calc(-100% * 1), 0, 0); }
+  100% {
+    transform: translate3d(calc(-100% * 2), 0, 0); } }
 
 .imgSlide {
   max-width: 100%;
