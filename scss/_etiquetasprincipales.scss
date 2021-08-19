@@ -7,10 +7,13 @@
 }
 
 body{
-    background-color: #bbf0f3;
-    background-image: linear-gradient(315deg, #bbf0f3 0%, #f6d285 74%);
+    background-color: #98de5b;
+    background-image: linear-gradient(315deg, #98de5b 0%, #98de5b 74%);
     font-family: 'Dancing Script', cursive;
+
 }
+   /*background-color: #bbf0f3;
+    background-image: linear-gradient(315deg, #bbf0f3 0%, #f6d285 74%);*/
 
 header{
     div{
@@ -36,8 +39,9 @@ h2{
     grid-template-rows: 1fr;
     justify-items: center;
     color: #ede06e;
-    border: 1px solid black;
+    border-radius: 10px;
     align-items: center;
+    margin: 5px;
 
 }
 
@@ -54,6 +58,19 @@ ul{
     }
 }
 
+article{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border: 20px;
+    padding: 20px;
+    margin: 10px;
+    background-color: #f8ceec;
+    background-image: linear-gradient(315deg, #f8ceec 0%, #a88beb 74%);
+    font-size: 37px;
+    border-radius: 20px;
+}
+
 //Seccion de Header en etiquetas principales
 
 /*Seccion de Header en etiquetas principales*/
@@ -63,9 +80,14 @@ nav{
         background-image: linear-gradient(315deg, #7ee8fa 0%, #80ff72 74%);
         margin: 2px;
         padding: 2px;
-        border: 1px solid black;
+        border-radius: 5px;
+        border: black solid 1px;
         font-size: 25px;
     }
+}
+
+nav div:hover{
+    transform: scale(1.1);
 }
 
 header{

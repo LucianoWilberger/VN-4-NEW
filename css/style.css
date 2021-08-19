@@ -5,10 +5,12 @@
   box-sizing: border-box; }
 
 body {
-  background-color: #bbf0f3;
-  background-image: linear-gradient(315deg, #bbf0f3 0%, #f6d285 74%);
+  background-color: #98de5b;
+  background-image: linear-gradient(315deg, #98de5b 0%, #98de5b 74%);
   font-family: 'Dancing Script', cursive; }
 
+/*background-color: #bbf0f3;
+    background-image: linear-gradient(315deg, #bbf0f3 0%, #f6d285 74%);*/
 header div input {
   font-family: 'Dancing Script', cursive;
   font-size: 20px; }
@@ -27,12 +29,25 @@ h2 {
   grid-template-rows: 1fr;
   justify-items: center;
   color: #ede06e;
-  border: 1px solid black;
-  align-items: center; }
+  border-radius: 10px;
+  align-items: center;
+  margin: 5px; }
 
 /*Seccion main* en etiquetas principales*/
 ul section li a:hover {
   color: white; }
+
+article {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  border: 20px;
+  padding: 20px;
+  margin: 10px;
+  background-color: #f8ceec;
+  background-image: linear-gradient(315deg, #f8ceec 0%, #a88beb 74%);
+  font-size: 37px;
+  border-radius: 20px; }
 
 /*Seccion de Header en etiquetas principales*/
 nav div {
@@ -40,8 +55,12 @@ nav div {
   background-image: linear-gradient(315deg, #7ee8fa 0%, #80ff72 74%);
   margin: 2px;
   padding: 2px;
-  border: 1px solid black;
+  border-radius: 5px;
+  border: black solid 1px;
   font-size: 25px; }
+
+nav div:hover {
+  transform: scale(1.1); }
 
 header nav div:hover {
   background-color: #eec0c6;
@@ -143,10 +162,10 @@ aside p {
 
 .redesV {
   display: flex;
-  background-color: #7ee8fa;
-  background-image: linear-gradient(315deg, #7ee8fa 0%, #80ff72 74%);
+  background-color: #f8ceec;
+  background-image: linear-gradient(315deg, #f8ceec 0%, #a88beb 74%);
   padding: 10px;
-  border: 1px black solid; }
+  border-radius: 20px; }
 
 .butonRedes {
   margin: 30px;
@@ -196,7 +215,8 @@ thead {
   color: black; }
 
 tr:nth-child(even) {
-  background-color: #d5d4d8; }
+  background-color: #f8ceec;
+  background-image: linear-gradient(315deg, #f8ceec 0%, #a88beb 74%); }
 
 .imgTable {
   display: flex;
@@ -255,7 +275,7 @@ tr:nth-child(even) {
 
 /*Fin seccion Formulario*/
 /*Seccion de slide en css*/
-article {
+.sliCont {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -272,7 +292,7 @@ article {
   display: flex;
   transform: translate3d(0, 0, 0);
   transition: all 600ms;
-  animation-name: valores;
+  animation-name: animacion;
   animation-duration: 6.5;
   animation-direction: alternate;
   animation-fill-mode: forwards;
@@ -347,7 +367,7 @@ input[id="3"]:checked ~ .slidex {
 input[id="3"]:checked ~ .pagination .pagination-item[for="3"] {
   background-color: white; }
 
-@keyframes valores {
+@keyframes animacion {
   33% {
     transform: translate3d(calc(-100% * 0), 0, 0); }
   66% {
@@ -459,39 +479,17 @@ input[id="3"]:checked ~ .pagination .pagination-item[for="3"] {
     height: 40px;
     text-align: center;
     font-size: 15px;
-    line-height: 10px; } }
+    line-height: 10px; }
+  article {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border: 20px;
+    padding: 20px;
+    margin: 10px;
+    background-color: #f8ceec;
+    background-image: linear-gradient(315deg, #f8ceec 0%, #a88beb 74%);
+    font-size: 15px;
+    border-radius: 20px; } }
 
-/* Smartphones (landscape) ----------- */
-@media only screen and (min-width: 321px) {
-  /* Styles */ }
-
-/* Smartphones (portrait) ----------- */
-@media only screen and (max-width: 320px) {
-  /* Styles */ }
-
-/* iPads (portrait and landscape) ----------- */
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-  /* Styles */ }
-
-/* iPads (landscape) ----------- */
-@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  /* Styles */ }
-
-/* iPads (portrait) ----------- */
-@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
-  /* Styles */ }
-
-/* Desktops and laptops ----------- */
-@media only screen and (min-width: 1224px) {
-  /* Styles */ }
-
-/* Large screens ----------- */
-@media only screen and (min-width: 1824px) {
-  /* Styles */ }
-
-/* iPhone 4 ----------- */
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
-  /* Styles */ }
-
-/*Fin seccion responsive*/
 /*Fin seccion responsive*/

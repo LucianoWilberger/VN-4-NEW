@@ -1,25 +1,29 @@
 //Slide en css
 
-article{
+.sliCont{
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 30px;
+    
 }
 
+
+   
 .slide{
     position: relative;
     max-width: 1000px;
     width: 100%;
     border-radius: 6px;
     overflow: hidden;
+
 }
 
 .slidex{
     display: flex;
     transform: translate3d(0, 0, 0);
     transition: all 600ms;
-    animation-name: valores;
+    animation-name: animacion;
     animation-duration: 6.5;
     animation-direction: alternate;
     animation-fill-mode: forwards;
@@ -109,7 +113,7 @@ input[id="3"]:checked ~ .pagination .pagination-item[for="3"]{
     background-color: white;
 }
 
-@keyframes valores{
+@keyframes animacion{
     33%{
         transform: translate3d(calc(-100% * 0), 0, 0);
     }
