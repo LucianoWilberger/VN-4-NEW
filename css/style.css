@@ -9,8 +9,6 @@ body {
   background-image: linear-gradient(315deg, #98de5b 0%, #98de5b 74%);
   font-family: 'Dancing Script', cursive; }
 
-/*background-color: #bbf0f3;
-    background-image: linear-gradient(315deg, #bbf0f3 0%, #f6d285 74%);*/
 header div input {
   font-family: 'Dancing Script', cursive;
   font-size: 20px; }
@@ -152,6 +150,12 @@ aside p {
   background-color: white;
   border-radius: 5px; }
 
+.iframes {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: auto; }
+
 /*Fin Seccion Main*/
 /*Seccion Footer*/
 .border {
@@ -165,7 +169,9 @@ aside p {
   background-color: #f8ceec;
   background-image: linear-gradient(315deg, #f8ceec 0%, #a88beb 74%);
   padding: 10px;
-  border-radius: 20px; }
+  border-radius: 20px;
+  margin: 10px;
+  padding: 10px; }
 
 .butonRedes {
   margin: 30px;
@@ -185,11 +191,13 @@ aside p {
   width: 40px; }
 
 .redesV div {
-  width: 100%;
+  width: 50%;
   margin: 10px;
   text-align: center; }
 
 /*Fin seccion Footer*/
+/*background-color: #bbf0f3;
+background-image: linear-gradient(315deg, #bbf0f3 0%, #f6d285 74%); Other BackGround*/
 /*Seccion tablas*/
 .tablaContainer {
   margin: 150px auto;
@@ -381,7 +389,7 @@ input[id="3"]:checked ~ .pagination .pagination-item[for="3"] {
 
 /*Fin seccion slide*/
 /*inicio responsive*/
-@media only screen and (min-width: 320px) and (max-width: 480px) {
+@media only screen and (min-width: 100px) and (max-width: 660px) {
   h1 {
     font-size: 42px; }
   h2 {
@@ -490,6 +498,13 @@ input[id="3"]:checked ~ .pagination .pagination-item[for="3"] {
     background-color: #f8ceec;
     background-image: linear-gradient(315deg, #f8ceec 0%, #a88beb 74%);
     font-size: 15px;
-    border-radius: 20px; } }
+    border-radius: 20px; }
+  .iframes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 400px;
+    height: 300px; } }
 
 /*Fin seccion responsive*/
